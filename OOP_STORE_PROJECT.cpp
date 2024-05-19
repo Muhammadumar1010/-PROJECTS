@@ -15,7 +15,7 @@ private:
     //-------------------
     // CUSTOMER INFO
     //-------------------
-    map<string, string> Customers;  // map to store username-password pairs
+    map<string, string> Customers; 
     string Current_Customer;
     //-------------------
     // STOCK INFO
@@ -185,7 +185,7 @@ private:
         for (size_t i = 0; i < Product_Name.size(); i++) {
             cout << setw(5) << left << i + 1 << setw(15) << left << Product_Name[i]
                  << setw(15) << left << Product_Quantity[i]
-                 << fixed << setprecision(2) // Set precision for price
+                 << fixed << setprecision(2) 
                  << "$" << Product_Price[i] << endl;
         }
         cout << "==========================================";
@@ -203,7 +203,7 @@ private:
             return;
         }
 
-        itemNumber -= 1; // Adjust for array index
+        itemNumber -= 1; 
 
         string Name;
         int Quantity;
@@ -269,7 +269,7 @@ private:
         for (size_t i = 0; i < Product_Name.size(); i++) {
             cout << setw(5) << left << i + 1 << setw(15) << left << Product_Name[i]
                  << setw(15) << left << Product_Quantity[i]
-                 << fixed << setprecision(2) // Set precision for price
+                 << fixed << setprecision(2) 
                  << "$" << Product_Price[i] << endl;
         }
         cout << "==========================================";
@@ -315,7 +315,7 @@ private:
         for (size_t i = 0; i < Product_Name.size(); i++) {
             cout << setw(5) << left << i + 1 << setw(15) << left << Product_Name[i]
                  << setw(15) << left << Product_Quantity[i]
-                 << fixed << setprecision(2) // Set precision for price
+                 << fixed << setprecision(2) 
                  << "$" << Product_Price[i] << endl;
         }
         cout << endl;
@@ -325,7 +325,7 @@ private:
             cout << "Choose No: ";
             cin >> choice;
 
-            int productIndex = choice - '1'; // Convert choice to index
+            int productIndex = choice - '1'; 
 
             if (productIndex >= 0 && productIndex < Product_Name.size()) {
                 if (Product_Quantity[productIndex] > 0) {
@@ -372,7 +372,7 @@ private:
         for (size_t i = 0; i < Cart_Items_Names.size(); i++) {
             cout << setw(5) << left << i + 1 << setw(15) << left << Cart_Items_Names[i]
                  << setw(15) << left << Cart_Items_Quantity[i]
-                 << fixed << setprecision(2) // Set precision for price
+                 << fixed << setprecision(2) 
                  << "$" << Cart_Items_Price[i] << endl;
         }
         cout << "==========================================";
